@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Live Coding Platform</title>
+    <script src="https://cdn.ably.com/lib/ably.min-2.js"></script>
+    <script src="https://unpkg.com/codeflask/build/codeflask.min.js"></script>
+    <script src="https://unpkg.com/@strudel/repl@latest"></script>
+
+    <link rel="stylesheet" href="liveCodingApp.css">
+    <link rel="stylesheet" href="codeFlask.css">
+</head>
+<body>
+
+<div id="welcomeView">
+    <h1>Welcome to Synced-Strudel!</h1>
+
+    <div class="userInfoSection">
+        <label for="usernameInput">Enter your name:</label>
+        <input type="text" id="usernameInput" placeholder="Your name" />
+    </div>
+    <div class="startingActions">
+        <div class="actionItemBtn createNew">
+            <h2>Start a new session</h2>
+            <p>and others can join you</p>
+        </div>
+
+        <div class="actionItemBtn">
+            <h2>Join an existing session</h2>
+            <label for="sessionCodeInput">Enter session code:</label>
+            <input type="text" id="sessionCodeInput" placeholder="e.g. 7F3K-9Q2L" />
+            <button id="joinSessionBtn">Join</button>
+        </div>
+    </div>
+</div>
+
+<div id="container">
+    <div id="topBar">
+        <button id="returnBtn">Return</button>
+
+        <input type="text" id="sessionTitleInput" placeholder="Session Title" value="Untitled Session" />
+
+        <div id="controlButtons">
+            <button id="startPlaybackBtn">Start</button>
+            <button id="stopPlaybackBtn">Stop</button>
+        </div>
+    </div>
+
+    <div id="theEditorContainer">
+        <!-- <div class="editorArea active">
+            <div class="toolbar">
+                <div class="editorInfo">
+                    <div class="editorAvatar">A</div>
+                    <input type="text" class="editorName" value="Maya" />
+                </div>
+                
+                <input type="text" class="editorStatusInput" placeholder="Status: Ready" />
+            </div>
+            <div class="strudelEditor"></div>
+        </div>
+        <div class="editorArea peer">
+            <div class="toolbar">
+                <div class="editorInfo">
+                    <div class="editorAvatar">B</div>
+                    <div class="editorName">Bob</div>
+                </div>
+                
+                <input type="text" class="editorStatusInput" placeholder="Status: Ready" />
+            </div>
+            <div class="strudelEditor"></div>
+        </div>
+        
+        <div class="editorArea pending">
+            
+             <div class="editor-invitation-pending">Waiting for peer to join...</div>
+             <div class="editor-invitation-security-code">7F3K-9Q2L</div>
+             <button class="editor-invitation-cancelBtn">Show/Hide Invitation</button>
+        </div>
+         -->
+    </div>
+
+    <div class="sessionInfo">
+        <div class="editor-invitation-security-code">7F3K-9Q2L</div>
+        <!-- <button class="editor-invitation-cancelBtn">Show/Hide Invitation</button> -->
+    </div>
+
+</div>
+
+
+<strudel-editor></strudel-editor>
+
+
+<script src="liveCodingApp.js"></script>
+
+</body>
+</html>

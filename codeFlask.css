@@ -1,0 +1,73 @@
+/* CodeFlask Dark Theme (PrismJS based) */
+
+.codeflask {
+    background-color: #1e1e1e;
+    color: #d4d4d4;
+}
+
+    .active .codeflask {
+        background-color: #333;
+        color: #fff;
+    }
+
+.codeflask .codeflask__lines {
+    background:#222;
+}
+.codeflask .token.comment,
+.codeflask .token.prolog,
+.codeflask .token.doctype,
+.codeflask .token.cdata {
+    color: #6a9955;
+}
+
+.codeflask .token.punctuation {
+    color: #d4d4d4;
+}
+
+.codeflask .token.namespace {
+    opacity: .7;
+}
+
+.codeflask .token.property,
+.codeflask .token.tag,
+.codeflask .token.boolean,
+.codeflask .token.number,
+.codeflask .token.constant,
+.codeflask .token.symbol,
+.codeflask .token.deleted {
+    color: #b5cea8;
+}
+
+.codeflask .token.selector,
+.codeflask .token.attr-name,
+.codeflask .token.string,
+.codeflask .token.char,
+.codeflask .token.builtin,
+.codeflask .token.inserted {
+    color: #ce9178;
+}
+
+.codeflask .token.operator,
+.codeflask .token.entity,
+.codeflask .token.url,
+.language-css .codeflask .token.string,
+.style .codeflask .token.string {
+    color: #d4d4d4;
+}
+
+.codeflask .token.atrule,
+.codeflask .token.attr-value,
+.codeflask .token.keyword {
+    color: #c586c0;
+}
+
+.codeflask .token.function,
+.codeflask .token.class-name {
+    color: #dcdcaa;
+}
+
+.codeflask .token.regex,
+.codeflask .token.important,
+.codeflask .token.variable {
+    color: #9cdcfe;
+}
