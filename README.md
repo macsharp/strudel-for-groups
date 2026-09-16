@@ -1,1 +1,1 @@
-# strudel-for-groups
+# Strudel for Groups
