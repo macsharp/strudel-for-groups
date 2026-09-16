@@ -131,12 +131,12 @@ var commManager = {
         }
     },
     broadcastProfileInfo: function() {
-        this.theChannel.publish("profile-info", {userId: app.userInfo.id, userName: app.userInfo.name, status: app.userInfo.status}, (err) => {
-            if (err) {
-                console.error('Error publishing message:', err);
-            } else {
-                console.log('Profile info broadcasted successfully!');
-            }
+        this.theChannel.publish("profile-info", {userId: app.userInfo.id, userName: app.userInfo.name, status: app.userInfo.status})
+        .then(() => {
+            console.log('Profile info broadcasted successfully!');
+        })
+        .catch((err) => {
+            console.error('Error publishing message:', err);
         });
     },
     broadcastSessionInfo: function() {
